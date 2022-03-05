@@ -19,6 +19,9 @@ Finally, I analyzed the thematic and lexical affinity of the novel's text and su
 
 ### Second step - the analysis of data
 - **Composition_Clusterization.ipynb** - all frames are clusterized in accordance with their composition and content. For this part the notebook **VGG16_Feature_Extraction.ipynb** is important. Unfortunately, the interactive plots don't work in Github, so below you can find the .gif with the results.
+
+![](https://github.com/TonLeon/Anna_Karenina_Computer_Vision/blob/main/Example.gif)
+
 - **Face_Recognition.ipynb** - here I detect faces in the shots, count their number, choose only those frames where only one face is detected, calculate the percentage of the square which face takes in the frame, and investigate the distribution of close-ups in the films. Moreover, I define which third of the frame (left, central, or right) contains the face.
 - **Sub_Intensity_and_TM.ipynb** - main Jupyter notebook for work with texts of 1967 movie subtitles and original source. Investigation of speech intensity in the film, similarity of subtitles and speech in novel, comparison of subtitles and novel by topics, which were developed in different parts of texts.
 
