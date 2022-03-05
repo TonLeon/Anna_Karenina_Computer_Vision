@@ -10,17 +10,31 @@ Close-up analysis, which could potentially convey **Tolstoy's attention to detai
 
 Finally, I analyzed the thematic and lexical affinity of the novel's text and subtitles to the 1967 film. The choice of these subtitles was motivated by the fact that there are no subtitles for domestic serials. In addition, there is no sense to compare Tolstoy's text with subtitles of foreign films, since they represent a translation of the original text, and the structures of the Russian and English languages are fundamentally different. As a result, I found out what themes were common for the film and the novel, as well as how similar the text of the screenplay was to the artistic source.
 
-## What do I have in this repository (in alphabet range):
+## In which order to work with the Jupyter notebooks:
+
+### First step - films' preprocessing, texts' preprocessing
+- **Frame_Extraction.ipynb** - basic code allowing to divide films and series into frames (one frame per second, but you can change this parameter)
+- **VGG16_Feature_Extraction.ipynb** - basic code with the usage of neural network VGG16 for getting features of the images for the futrher frames' clasterization
+- **Novel_Preprocessing.ipynb** - extraction of direct and reported speech from the novel and division of the novel into 8 parts
+
+### Second step - the analysis of data
+- **Composition_Clusterization.ipynb** - all frames are clusterized in accordance with their composition and content. For this part the notebook **VGG16_Feature_Extraction.ipynb** is important. Unfortunately, the interactive plots don't work in Github, so below you can find the .gif with the results.
+- **Face_Recognition.ipynb** - here I detect faces in the shots, count their number, choose only those frames where only one face is detected, calculate the percentage of the square which face takes in the frame, and investigate the distribution of close-ups in the films. Moreover, I define which third of the frame (left, central, or right) contains the face.
+- **Sub_Intensity_and_TM.ipynb** - main Jupyter notebook for work with texts of 1967 movie subtitles and original source. Investigation of speech intensity in the film, similarity of subtitles and speech in novel, comparison of subtitles and novel by topics, which were developed in different parts of texts.
+
+### Additional notebooks:
+
+- **Anna_Karenina_Color_Clusterization.ipynb** - trial but working code for color clusterization of shots and images in general.
+- **Scenes_Length.ipynb** - trial but working code to automatically count the length of scenes in feature Karenina adaptations
+- **TSNE.ipynb** - trial code for dimensionality reduction of matrix
+
+### Folders and other documents in the main direction:
 
 - **AK_1967_P1.str** and **AK_1967_P2.str** - the subtitles for two parts of Anna Karenina 1967 (Soviet version of the film)
 - **Anna_Karenina.txt** - the full text of Tolstoy's novel
-- **Anna_Karenina_Color_Clusterization.ipynb** - trial but working code for color clusterization of shots and images in general.
-- **Composition_Clusterization.ipynb** - one of the main Jupyter notebooks for my MA thesis. In this one, all films are divided into frames and all frames are clusterized in accordance with their composition and content. Unfortunately, the interactive plots don't work in Github, so below you can find the .gif with the results.
-- **Face_Recognition.ipynb** - one more main Jupyter notebook for my MA thesis. Here I detect faces in the shots, count their number, choose only those frames where only one face is detected, calculate the percentage of the square which face takes in the frame, and investigate the distribution of close-ups in the films. Moreover, I define which third of the frame (left, central, or right) contains the face.
-- **Frame Extraction.ipynb** - basic code allowing to divide films into frames (one frame per second, but you can change this parameter).
-- **Keras&K-Means.ipynb** - trial code
-- **Lemma_Token_Sub_Novel.ipynb** - lemmatization and tokenization of direct and reported speech of novel
-- **Novel_Preprocessing.ipynb** - extraction of direct and reported speech from the novel and division of the novel into 8 parts
-- **Scenes_Length.ipynb** - trial but working code to automatically count the length of scenes in feature Karenina adaptations
-- **Sub_Intensity_and_TM.ipynb** - main Jupyter notebook for work with text aspect of 1967 movie and original source. Investigation of speech intensity in the film, similarity of subtitles and speech in novel, comparison of subtitles and novel by topics, which were developed in different parts of texts.
-- **TSNE.ipynb** - trial code for dimensionality reduction of matrix
+- **Text_documents** - text results of code work (direct and reported speech, subtitles in .txt format)
+- **output_keys_6.csv** - Topic Modelling results from Mallet
+- **topic_weight_6.csv** - Topic Modelling results from Mallet
+- **topics_in_docs_6.csv** - Topic Modelling results from Mallet
+
+
