@@ -12,15 +12,15 @@ Finally, I analyzed the thematic and lexical affinity of the novel's text and su
 
 ## What do I have in this repository (in alphabet range):
 
-- AK_1967_P1.str and AK_1967_P2.str - the subtitles for two parts of *Anna Karenina* 1967 (Soviet version of film)
-- Anna_Karenina.txt - full text of Tolstoy's novel
-- Anna_Karenina_Color_Clusterization.ipynb - **trial** but working code for color clusterization of shots and images in general. 
-- Composition_Clusterization.ipynb - one of **main** Jupyter notebooks for my MA thesis. In this one all films are devided into frames and all frames are clusterized in accordance with their composition and content. Unfortunately, the interactive plots don't work in Github, so below you can find the .gif with the results.
-- Face_Recognition.ipynb - one more **main** Jupyter notebooks for my MA thesis. Here I detect faces in the shots, count their number, choose only those frames where only one face is detected, calculate the percentage of square which face takes in the frame, and investigate the distribution of close-ups along the film duration. Moreover, I define in which third of frame (left, central or right) the face appears.
-- Frame Extraction.ipynb - basic code allowing to devide films into frames (one frame per second, but you can change this parameter).
-- Keras&K-Means.ipynb - **trial** code
-- Lemma_Token_Sub_Novel.ipynb - lemmatization and tokenization of direct and reported speech of novel
-- Novel_Preprocessing.ipynb - extraction of direct and reported speech from the novel and division of the novel into 8 parts
-- Scenes_Length.ipynb - **trial** but working code to automatically count the length of scenes in feature Karenina adaptations
-- Sub_Intensity_and_TM.ipynb - **main** Jupyter notebook for work with text aspect of 1967 movie and original source. Investigation of speech intensity in the film, similarity of subtitles and speech in novel, comparisson of subtitles and novel by topics, which were developped in different parts of texts.
-- TSNE.ipynb - **trial** code for dimensionality reduction of matrix
+- **AK_1967_P1.str** and **AK_1967_P2.str** - the subtitles for two parts of *Anna Karenina* 1967 (Soviet version of film)
+- **Anna_Karenina.txt** - full text of Tolstoy's novel
+- **Anna_Karenina_Color_Clusterization.ipynb** - **trial** but working code for color clusterization of shots and images in general. 
+- **Composition_Clusterization.ipynb** - one of **main** Jupyter notebooks for my MA thesis. In this one all films are devided into frames and all frames are clusterized in accordance with their composition and content. Unfortunately, the interactive plots don't work in Github, so below you can find the .gif with the results.
+- **Face_Recognition.ipynb** - one more **main** Jupyter notebooks for my MA thesis. Here I detect faces in the shots, count their number, choose only those frames where only one face is detected, calculate the percentage of square which face takes in the frame, and investigate the distribution of close-ups along the film duration. Moreover, I define in which third of frame (left, central or right) the face appears.
+- **Frame Extraction.ipynb** - basic code allowing to devide films into frames (one frame per second, but you can change this parameter).
+- **Keras&K-Means.ipynb** - **trial** code
+- **Lemma_Token_Sub_Novel.ipynb** - lemmatization and tokenization of direct and reported speech of novel
+- **Novel_Preprocessing.ipynb** - extraction of direct and reported speech from the novel and division of the novel into 8 parts
+- **Scenes_Length.ipynb** - **trial** but working code to automatically count the length of scenes in feature Karenina adaptations
+- **Sub_Intensity_and_TM.ipynb** - **main** Jupyter notebook for work with text aspect of 1967 movie and original source. Investigation of speech intensity in the film, similarity of subtitles and speech in novel, comparisson of subtitles and novel by topics, which were developped in different parts of texts.
+- **TSNE.ipynb** - **trial** code for dimensionality reduction of matrix
